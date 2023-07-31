@@ -1,0 +1,305 @@
+:root {
+    --light-yellow: #fee402;
+    --yellow: #fdca00;
+    --white: #f3f3f3;
+    --grey: #2a2e34;
+    --black: #0b0c0c;
+}
+
+/* =========== tipografia ============== */
+@font-face {
+    font-family: 'montserrat';
+    src: url("../_font/montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "lato";
+    src: url("../_font/lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "lato-l";
+    src: url("../_font/lato/Lato-Thin.ttf");
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "montserrat";
+    font-variation-settings: 'wght' 500;
+}
+
+p {
+    font-family: "lato";
+} 
+
+.bold {
+    font-variation-settings: 'wght' 700;
+}
+
+.thin {
+    font-variation-settings: 'wght' 100;
+}
+
+.p-thin {
+    font-family: "lato-l";
+} 
+
+.text-shadow {
+    /* text-shadow: 2px 2px 8px #00000088; */
+    text-shadow: 2px 2px 8px #00000000;
+}
+
+.deco-none {
+    text-decoration: none;
+}
+
+/* ================   Navgeação home  ==============*/
+.nav-item-deco{
+    margin-bottom: 1px;
+    border-color: #00000000;
+    border-bottom-style: solid;
+    border-width: 2px;
+    transition: 0.3s;
+}
+
+.nav-item-deco:hover{
+    border-bottom-style: solid;
+    border-color: var(--light-yellow);
+    margin-bottom: 0px;
+    border-width: 2px;
+}
+
+.dropdown-menu {
+    border-width: 0px;
+}
+
+.dropdown-item:active {
+    background-color: var(--white);
+}
+
+.navbar-toggler {
+    border-width: 0px;
+}
+
+
+/* ======================   BANNER  ======================= */
+ 
+.banner-crop {
+    height: 40vh;
+    overflow: hidden;
+}
+
+.carousel-img {
+    width: 100%;
+    object-position: center;
+}
+
+.banner-service {
+    height: 20vh;
+    background: linear-gradient(to left, var(--yellow), var(--yellow));
+}
+
+.banner-img {
+    opacity: 1;
+}
+
+.banner-overlay {
+    background: linear-gradient(to left, #fdca00dd 0%,#fdca00 35%, #fdca00 65%, #fdca00dd 100%);
+}
+
+.service-banner {
+    background-color: var(--yellow);
+}
+
+/* =================  corpo ================  */
+
+.body {
+    background-color: var(--white) !important;
+}
+
+.rounded-lg {
+    border-radius: 30px;
+}
+
+.border-yellow {
+    border-color: var(--yellow);
+}
+
+/*  ===============  sessoes =========================== */
+
+.section-grey {
+    background-color: rgb(221, 221, 221);
+}
+
+.section-yellow {
+    background-color: var(--yellow);
+}
+
+.section-white {
+    background-color: var(--white);
+}
+
+.section-title {
+    text-decoration: underline var(--light-yellow);
+}
+
+/* sessão cliente homepage */
+
+.cliente-logo {
+    max-height: 10vh;
+    width: auto;
+    filter: contrast(100%) grayscale(100%);
+}
+
+.cliente-item {
+    width: 200px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Sessao quem somos */
+
+.img-overlay-r {
+    background: linear-gradient(to right, #00000099 60%, #00000000);
+    /* background-color: #0b0c0c99; */
+}
+
+.img-overlay-l {
+    background: linear-gradient(to left, #00000099 60%, #00000000);
+    /* background-color: #0b0c0c99; */
+}
+
+.quem-somos-main {
+    max-height: 90vh;
+}
+
+
+/* Botoes */
+
+.btn {
+    background: linear-gradient(to right, var(--grey) 50%, var(--light-yellow) 50%) right;
+    background-size: 200%;
+    color: var(--grey);
+    border-width: 0;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, var(--grey) 50%, var(--light-yellow) 50%);
+    background-size: 200%;
+    background-position: left;
+    color: var(--light-yellow);
+    border-color: var(--light-yellow);
+}
+
+.service-btn {
+    background: linear-gradient(to right, var(--light-yellow) 50%, var(--white) 50%) right;
+    background-size: 200%;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--grey);
+    transition: 0.3s;
+    cursor: pointer
+}
+
+.service-btn:hover {
+    color: var(--grey);
+    background-position: left;
+    border-radius: 6px;
+}
+
+.service-btn-inner {
+    background-color: var(--white);
+}
+
+.service-btn-inner:active {
+    background-color: #cecece;
+}
+
+.btn-branco {
+    background-color: var(--white);
+    border-width: 10px;
+    border-color: #0b0c0c;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--grey);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-branco:hover {
+    text-decoration: none;
+    color: var(--grey);
+    background-color: var(--yellow);
+    color: var(--white);
+    
+}
+
+.btn-branco:active {
+    background-color: #ccc;
+}
+
+.service-btn-sm {
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--grey);
+    transition: 0.3s;
+}
+
+/* Para tela grande apenas */
+
+@media only screen and (min-width: 992px) {
+    .navbar-mod{
+        max-width: 960px !important;
+    }
+    .figure-size {
+        max-width: 100%;
+    }
+    .section-content {
+        max-width: 1060px;
+    }
+}
+
+/* Para celular apenas */
+@media only screen and (max-width: 576px) {
+    .carousel-img {
+        height: 40vh;
+        width: auto !important;
+    }
+    .dropdown-menu {
+        background-color: var(--white);
+        border-width: 0px;
+    }
+    .cliente-logo {
+        height: 10vw !important;
+    }
+    .cliente-item {
+        width: fit-content;
+    }
+    
+}
+
+
+/* scrollbar */
+
+/*
+body::-webkit-scrollbar-track
+{
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: var(--grey);
+} */
